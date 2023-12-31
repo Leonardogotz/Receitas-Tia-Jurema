@@ -1,0 +1,156 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7cf7b;
+    margin-bottom: 60px; /* Adicionando espaço para o rodapé */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre as receitas */
+    flex-wrap: wrap; /* Quebra de linha quando o espaço é insuficiente */
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar {
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 200px;
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items:inherit;
+  }
+  
+  .logo {
+    width: 150px; /* ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.2px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .frase {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  /* Estilos para tornar o menu responsivo */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+    /* Estilos para alinhar os campos verticalmente */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ajusta a largura total do campo */
+        margin-bottom: 10px;
+        padding-right: 200px;
+      }
+  
+      .form-row label,
+      .form-row input,
+      .form-row textarea {
+        width: 100%; /* Define a largura dos elementos para ocupar a largura máxima do contêiner pai */
+        resize: vertical; /* Permite redimensionar a altura verticalmente */
+        padding: 5px; /* Adiciona um espaçamento interno */
+        font-size: 14px; /* Define o tamanho da fonte */
+      }
+  
+      .form-row textarea {
+        height: 150px; /* Define a altura desejada */
+      }
+  
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #fb8500;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+  
+      input[type="submit"]:hover {
+        background-color: #ff6b00;
+      }
+
+      .cep {
+        display: flex;
+        flex-direction: column;
+        width: 50%; /* Ajusta a largura total do campo */
+        margin-bottom: 10px;
+        padding-right: 200px;
+      }
+
+      .cep label,
+      .cep input,
+      .cep textarea {
+        width: 100%; /* Define a largura dos elementos para ocupar a largura máxima do contêiner pai */
+        resize: vertical; /* Permite redimensionar a altura verticalmente */
+        padding: 5px; /* Adiciona um espaçamento interno */
+        font-size: 14px; /* Define o tamanho da fonte */
+      }
